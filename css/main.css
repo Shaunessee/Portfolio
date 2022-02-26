@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700&display=swap");
+body {
+  background: #e6e6e6;
+  height: 100vh;
+  margin: 0;
+  font-family: "Battambang", arial;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container {
+  background-color: rgba(180, 85, 170, 0.58);
+}
+
+.nav-container a {
+  color: #18116a;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em;
+}
+
+header .logo {
+  color: #a0067e;
+  font-weight: bold;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul a {
+  display: block;
+  padding: 0 1em;
+}
+
+.social-header,
+.hero-design {
+  display: none;
+}
+
+.hero {
+  background-color: rgba(175, 96, 168, 0.58);
+  color: #18116a;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  padding: 4em;
+}
+
+.meet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 400px;
+  font-weight: bold;
+  color: #2a53bc;
+}
+
+.meet span {
+  margin-top: 1em;
+  margin-right: 0.5em;
+  margin-left: 6em;
+}
+
+.scroll {
+  width: 30px;
+  margin-top: 2em;
+}
+
+section {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.about-me {
+  position: relative;
+}
+
+.about-me::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(157, 177, 230, 0.5);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.shawdow-circle {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(218, 62, 137, 0.14);
+  top: 170px;
+  left: 100px;
+  z-index: -1;
+}
+
+.subtitle {
+  font-weight: bold;
+  color: #7b17df;
+  letter-spacing: 0.1em;
+  font-size: 1.2em;
+}
+
+.about-me-desc {
+  color: #000000;
+  margin-bottom: 3em;
+  font-size: 0.95em;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+
+.skills {
+  background-color: rgba(86, 223, 199, 0.4);
+}
+
+.skills-container ul li {
+  background: #9db1e6;
+  padding: 2em;
+  border-radius: 35px;
+  margin-bottom: 1em;
+}
+
+.skills-container ul li .icon-container {
+  height: 100px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  margin: 0 auto;
+}
+
+.skills-container ul li .icon-container.one {
+  width: 50px;
+}
+
+.skills-container ul li .icon-container.two {
+  width: 50px;
+}
+
+.skills-container ul li .icon-container.three {
+  width: 70px;
+}
+
+.skills-title {
+  font-weight: bold;
+}
+
+.skill-description {
+  margin-bottom: 2em;
+}
+
+.portfolio {
+  background: #e6e6e6;
+}
+
+.portfolio-container a img {
+  border-radius: 1em;
+  margin-bottom: 0em;
+}
+
+.resume {
+  background: #e6e6e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.resume a {
+  margin-left: 1em;
+}
+
+.footer {
+  background: rgba(175, 96, 167, 0.58);
+}
+
+.footer-design {
+  display: none;
+}
+
+.content {
+  line-height: 2em;
+}
+
+.content ul {
+  line-height: 3em;
+  margin-top: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .footer-header {
+  letter-spacing: 0.2em;
+}
+
+.email {
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+@media only screen and (min-width: 800px) {
+  .about-me,
+  .portfolio {
+    text-align: left;
+  }
+  .about-me,
+  .portfolio-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% auto;
+        grid-template-columns: 40% auto;
+  }
+  .left,
+  .portfolio-left {
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+  }
+  .right {
+    margin-left: 2em;
+    margin-top: 1em;
+  }
+  .skills {
+    margin-top: -5em;
+    margin-bottom: -7em;
+    padding-top: 7em;
+  }
+  .skills-container ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    grid-gap: 1em;
+  }
+  .portfolio {
+    padding-top: 7em;
+  }
+  .portfolio-container img {
+    margin-left: 2em;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .hero {
+    height: 90vh;
+  }
+  .hero h1 {
+    display: table-caption;
+  }
+  .nav-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background: unset;
+  }
+  .nav-container header {
+    background: rgba(179, 86, 170, 0.58);
+  }
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+  .social-header {
+    padding: 2em 4em 2em 0;
+  }
+  section {
+    padding: 4em;
+  }
+  .social-header {
+    display: block;
+  }
+  .social-header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 7em;
+    float: right;
+  }
+  .social-header img {
+    width: 20px;
+  }
+  .hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0;
+  }
+  .hero .content {
+    background: rgba(175, 96, 167, 0.58);
+    padding: 6em 8em 6em 4em;
+    text-align: left;
+  }
+  .hero .content h1 {
+    font-size: 3em;
+    line-height: 1.2em;
+  }
+  .meet {
+    margin: unset;
+  }
+  .hero-design {
+    display: unset;
+    margin-left: -50%;
+    margin-top: 15%;
+    width: 100%;
+  }
+  .portfolio img {
+    float: right;
+    max-width: 500px;
+  }
+}
+
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@-webkit-keyframes circleAnim {
+  from {
+    transforms: translate 228px, 806px;
+    z-index: 5;
+  }
+  to {
+    transforms: translate 262px, 830px;
+  }
+}
+
+@keyframes circleAnim {
+  from {
+    transforms: translate 228px, 806px;
+    z-index: 5;
+  }
+  to {
+    transforms: translate 262px, 830px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
