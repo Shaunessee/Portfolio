@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700&display=swap");
+body {
+  background: #e6e6e6;
+  font-family: "Battambang", arial;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-container {
+  background-color: rgba(180, 85, 170, 0.58);
+}
+
+.nav-container a {
+  color: #18116a;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em;
+}
+
+header .logo {
+  color: #a0067e;
+  font-weight: bold;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul a {
+  display: block;
+  padding: 0 1em;
+}
+
+.social-header {
+  display: none;
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 300px;
+  width: 400px;
+}
+
+.footer {
+  background: rgba(175, 96, 167, 0.58);
+  height: 226px;
+}
+
+.content {
+  line-height: 2em;
+}
+
+.content ul {
+  line-height: 3em;
+  margin-top: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .footer-header {
+  letter-spacing: 0.2em;
+}
+
+.email {
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+@media only screen and (min-width: 1050px) {
+  .nav-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background: unset;
+  }
+  .nav-container header {
+    background: rgba(179, 86, 170, 0.58);
+  }
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+  .social-header {
+    display: block;
+    padding: 2em 4em 2em 0;
+  }
+  .social-header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 7em;
+    float: right;
+  }
+  .social-header img {
+    width: 20px;
+  }
+}
+/*# sourceMappingURL=memory.css.map */
