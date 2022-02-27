@@ -11,12 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
             img: 'images/hotdog.png'
         },
         {
-            name: 'cheeseburger',
-            img: 'images/chesseburger.png'
+            name: 'ramen',
+            img: 'images/ramen.png'
         },
         {
-            name: 'cheeseburger',
-            img: 'images/chesseburger.png'
+            name: 'ramen',
+            img: 'images/ramen.png'
         },
         {
             name: 'fries',
@@ -51,11 +51,11 @@ document.addEventListener('DOMContentLoaded', () => {
             img: 'images/pizza.png'
         },
     ]
-
+    
     cardArray.sort(() => 0.5 - Math.random())
 
     const grid = document.querySelector('.grid')
-    const resultDisplay = document.querySelector['#result']
+    const resultDisplay = document.querySelector('#result')
     let cardsChosen =[]
     let cardsChosenId = []
     let cardsWon = []
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         cardsChosen = []
         cardsChosenId = []
-        resultDisplay.textContent = cardsWon,length
+        resultDisplay.textContent = cardsWon.length
         if (cardsWon.length === cardArray.length/2) {
             resultDisplay.textContent = 'Congratulations! You found them all!'
         }
