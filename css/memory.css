@@ -4,12 +4,6 @@ body {
   font-family: "Battambang", arial;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 a {
   text-decoration: none;
 }
@@ -38,6 +32,9 @@ header .logo {
 }
 
 header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,10 +43,6 @@ header ul {
 header ul a {
   display: block;
   padding: 0 1em;
-}
-
-.social-header {
-  display: none;
 }
 
 .grid {
@@ -81,6 +74,9 @@ header ul a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .content .footer-header {
@@ -96,8 +92,8 @@ header ul a {
   .nav-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 66% auto;
-        grid-template-columns: 66% auto;
+    -ms-grid-columns: 100% auto;
+        grid-template-columns: 100% auto;
     background: unset;
   }
   .nav-container header {
