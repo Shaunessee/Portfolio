@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700&display=swap");
 body {
   background: #e6e6e6;
+  width: 100%;
   margin: 0, auto;
   font-family: "Battambang", arial;
 }
