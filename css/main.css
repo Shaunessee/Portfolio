@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700&display=swap");
 body {
   background: #e6e6e6;
-  height: 100vh;
-  margin: 0;
   font-family: "Battambang", arial;
 }
 
@@ -345,30 +343,6 @@ section {
   .portfolio img {
     float: right;
     max-width: 500px;
-  }
-}
-
-.circle {
-  animation: circleAnim 1s infinite alternate-reverse;
-}
-
-@-webkit-keyframes circleAnim {
-  from {
-    transforms: translate 228px, 806px;
-    z-index: 5;
-  }
-  to {
-    transforms: translate 262px, 830px;
-  }
-}
-
-@keyframes circleAnim {
-  from {
-    transforms: translate 228px, 806px;
-    z-index: 5;
-  }
-  to {
-    transforms: translate 262px, 830px;
   }
 }
 /*# sourceMappingURL=main.css.map */

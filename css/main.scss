@@ -2,8 +2,8 @@
 
 body {
   background: hsla(0, 0%, 90%, 1);
-  height: 100vh;
-  margin: 0;
+  // height: 100vh;
+  // margin: 0;
   font-family: "Battambang", arial;
 }
 ul {
@@ -307,15 +307,4 @@ section {
   // }
 }
 
-.circle {
-  animation: circleAnim 1s infinite alternate-reverse;
-}
-@keyframes circleAnim {
-  from {
-    transforms: translate (228px, 806px);
-    z-index: 5;
-  }
-  to {
-    transforms: translate (262px, 830px);
-  }
-}
+
