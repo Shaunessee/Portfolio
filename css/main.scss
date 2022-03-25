@@ -38,9 +38,11 @@ header {
 
   ul {
     display: flex;
+    
     a {
       display: block;
-      padding: 0 0.5em;
+      margin: 6px;
+      // padding: 0 0.5em;
       font-size:medium;
     }
   }
