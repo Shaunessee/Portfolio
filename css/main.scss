@@ -37,18 +37,18 @@ header {
     font-size: large;
   }
 
-  ul {
-    display: flex;
+  // ul {
+  //   display: flex;
     
-    a {
-      display: none;
-      // display: block;
-      // margin: 6px;
-      // text-align: center;
-      // padding: 0 0.5em;
+  //   a {
+  //     display: none;
+  //     // display: block;
+  //     // margin: 6px;
+  //     // text-align: center;
+  //     // padding: 0 0.5em;
       
-    }
-  }
+  //   }
+  // }
 }
 .social-header,
 .hero-design {
@@ -60,6 +60,7 @@ header {
   display: grid;
   text-align: left;
   padding: 2em;
+  margin-left: -6em;
   // width: 100%;
 }
 
@@ -207,19 +208,7 @@ section {
 }
 
 @media only screen and (min-width: 800px) {
-  header {
-    ul {
-      display: flex;
-      
-      a {
-        display: block;
-        margin: 6px;
-        text-align: center;
-        // padding: 0 0.5em;
-        
-      }
-    }
-  }
+  
   .about-me,
   .portfolio {
     text-align: left;

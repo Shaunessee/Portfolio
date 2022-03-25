@@ -45,16 +45,6 @@ header .logo {
   font-size: large;
 }
 
-header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header ul a {
-  display: none;
-}
-
 .social-header,
 .hero-design {
   display: none;
@@ -67,6 +57,7 @@ header ul a {
   display: grid;
   text-align: left;
   padding: 2em;
+  margin-left: -6em;
 }
 
 .meet {
@@ -232,16 +223,6 @@ section {
 }
 
 @media only screen and (min-width: 800px) {
-  header ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  header ul a {
-    display: block;
-    margin: 6px;
-    text-align: center;
-  }
   .about-me,
   .portfolio {
     text-align: left;
