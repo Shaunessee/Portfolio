@@ -2,8 +2,8 @@
 body {
   background: #e6e6e6;
   height: auto;
-  margin: 0;
-  width: auto;
+  margin: auto;
+  max-width: 500px;
   font-family: "Battambang", arial;
   text-align: left;
 }
