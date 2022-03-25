@@ -60,8 +60,12 @@ header {
   display: grid;
   // text-align: left;
   padding: 2em;
-  margin-left: 0em;
+  // margin-left: 0em;
   // width: 100%;
+}
+
+.content {
+ text-align: left;
 }
 
 .meet {

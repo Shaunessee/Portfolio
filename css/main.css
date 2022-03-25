@@ -57,7 +57,10 @@ header .logo {
   display: -ms-grid;
   display: grid;
   padding: 2em;
-  margin-left: 0em;
+}
+
+.content {
+  text-align: left;
 }
 
 .meet {
