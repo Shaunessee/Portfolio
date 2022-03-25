@@ -2,7 +2,7 @@
 
 body {
   background: hsla(0, 0%, 90%, 1);
-  height: 100vh;
+  // height: 100vh;
   margin: 0;
   // max-width: 100%;
   font-family: "Battambang", arial;
@@ -59,7 +59,7 @@ header {
   color: #18116a;
   display: grid;
   // text-align: left;
-  padding: 2em;
+  padding: 2em 0em 0em -2em;
   // margin-left: 0em;
   // width: 100%;
 }
@@ -67,6 +67,7 @@ header {
 .content {
  text-align: left;
  font-size: 15px;
+ margin-left: 2em;
 }
 
 .meet {

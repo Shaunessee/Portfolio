@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700&display=swap");
 body {
   background: #e6e6e6;
-  height: 100vh;
   margin: 0;
   font-family: "Battambang", arial;
 }
@@ -56,12 +55,13 @@ header .logo {
   color: #18116a;
   display: -ms-grid;
   display: grid;
-  padding: 2em;
+  padding: 2em 0em 0em -2em;
 }
 
 .content {
   text-align: left;
   font-size: 15px;
+  margin-left: 2em;
 }
 
 .meet {
