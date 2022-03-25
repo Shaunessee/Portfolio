@@ -20,7 +20,7 @@ img {
 }
 .nav-container {
   background-color: rgba(180, 85, 170, 0.58);
-  // width: 100%;
+  width: 100%;
   a {
     color: #18116a;
   }
@@ -39,7 +39,7 @@ header {
     display: flex;
     a {
       display: block;
-      padding: 0 1em;
+      padding: 0 0.5em;
     }
   }
 }

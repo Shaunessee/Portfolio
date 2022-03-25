@@ -21,6 +21,7 @@ img {
 
 .nav-container {
   background-color: rgba(180, 85, 170, 0.58);
+  width: 100%;
 }
 
 .nav-container a {
@@ -50,7 +51,7 @@ header ul {
 
 header ul a {
   display: block;
-  padding: 0 1em;
+  padding: 0 0.5em;
 }
 
 .social-header,
