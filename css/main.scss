@@ -2,7 +2,7 @@
 
 body {
   background: hsla(0, 0%, 90%, 1);
-  // height: 100vh;
+  height: 100vh;
   margin: 0;
   // max-width: 100%;
   font-family: "Battambang", arial;
@@ -58,9 +58,9 @@ header {
   background-color: rgba(175, 96, 168, 0.58);
   color: #18116a;
   display: grid;
-  text-align: left;
+  // text-align: left;
   padding: 2em;
-  margin-left: -6em;
+  margin-left: 0em;
   // width: 100%;
 }
 
@@ -70,7 +70,7 @@ header {
   width: 400px;
   font-weight: bold;
   color: #2a53bc;
-  text-align: left;
+  margin-left: 2em;
 
   // span {
   //   margin-top: 1em;
