@@ -1,14 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700&display=swap");
 body {
   background: #e6e6e6;
-<<<<<<< HEAD
   height: 100vh;
   margin: 0;
   width: 100%;
-=======
-  width: 100%;
-  margin: 0;
->>>>>>> 89b277fb03fe8ea6a88f52d4865fbbb61eea8d93
   font-family: "Battambang", arial;
 }
 
