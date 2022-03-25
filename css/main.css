@@ -3,6 +3,7 @@ body {
   background: #e6e6e6;
   height: 100vh;
   margin: 0;
+  max-width: 100%;
   font-family: "Battambang", arial;
 }
 
