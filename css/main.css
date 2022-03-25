@@ -1,11 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700&display=swap");
 body {
   background: #e6e6e6;
-  height: auto;
-  margin: auto;
-  max-width: 500px;
+  height: 100vh;
+  margin: 0;
   font-family: "Battambang", arial;
-  text-align: left;
 }
 
 ul {
@@ -266,8 +264,8 @@ section {
   .skills-container ul {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[3];
-        grid-template-columns: repeat(3, auto);
+    -ms-grid-columns: auto;
+    grid-template-columns: repeat(3, auto);
     grid-gap: 1em;
   }
   .portfolio {
@@ -321,8 +319,8 @@ section {
   .hero {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 66% auto;
-        grid-template-columns: 66% auto;
+    -ms-grid-columns: auto;
+    grid-template-columns: 66% auto;
     background: unset;
     padding: 0;
   }

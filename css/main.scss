@@ -2,11 +2,10 @@
 
 body {
   background: hsla(0, 0%, 90%, 1);
-  height: auto;
-  margin: auto;
-  max-width: 500px;
+  height: 100vh;
+  margin: 0;
+  // max-width: 500px;
   font-family: "Battambang", arial;
-  text-align: left;
 }
 ul {
   list-style-type: none; //gets rid of any dots in the list
@@ -219,6 +218,7 @@ section {
   }
   .skills-container ul {
     display: grid;
+    -ms-grid-columns: (auto);
     grid-template-columns: repeat(3, auto);
     grid-gap: 1em;
   }
@@ -271,6 +271,7 @@ section {
   }
   .hero {
     display: grid;
+    -ms-grid-columns: auto;
     grid-template-columns: 66% auto;
     background: unset;
     padding: 0;
