@@ -2,9 +2,9 @@
 
 body {
   background: hsla(0, 0%, 90%, 1);
-  height: 100vh;
+  // height: 100vh;
   margin: 0;
-  max-width: 100%;
+  // max-width: 100%;
   font-family: "Battambang", arial;
 }
 ul {
@@ -20,7 +20,7 @@ img {
 }
 .nav-container {
   background-color: rgba(180, 85, 170, 0.58);
-  text-align: left;
+  // width: 100%;
   a {
     color: #18116a;
   }
@@ -51,8 +51,9 @@ header {
   background-color: rgba(175, 96, 168, 0.58);
   color: #18116a;
   display: grid;
-  text-align: left;
-  padding: 4em;
+  text-align: center;
+  padding: 2em;
+  // width: 100%;
 }
 
 .meet {
