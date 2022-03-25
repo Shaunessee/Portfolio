@@ -57,7 +57,7 @@ header {
   background-color: rgba(175, 96, 168, 0.58);
   color: #18116a;
   display: grid;
-  text-align: center;
+  text-align: left;
   padding: 2em;
   // width: 100%;
 }
@@ -68,6 +68,7 @@ header {
   width: 400px;
   font-weight: bold;
   color: #2a53bc;
+  text-align: left;
 
   span {
     margin-top: 1em;
@@ -75,10 +76,10 @@ header {
     margin-left: 6em;
   }
 }
-.scroll {
-  width: 30px;
-  margin-top: 2em;
-}
+// .scroll {
+//   width: 30px;
+//   margin-top: 2em;
+// }
 section {
   padding: 4em 2em;
   text-align: center;

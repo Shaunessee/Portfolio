@@ -67,7 +67,7 @@ header ul a {
   color: #18116a;
   display: -ms-grid;
   display: grid;
-  text-align: center;
+  text-align: left;
   padding: 2em;
 }
 
@@ -79,17 +79,13 @@ header ul a {
   width: 400px;
   font-weight: bold;
   color: #2a53bc;
+  text-align: left;
 }
 
 .meet span {
   margin-top: 1em;
   margin-right: 0.5em;
   margin-left: 6em;
-}
-
-.scroll {
-  width: 30px;
-  margin-top: 2em;
 }
 
 section {
