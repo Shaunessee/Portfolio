@@ -28,7 +28,8 @@ img {
 header {
   display: flex; //brings them side by side in header
   justify-content: space-between;
-  padding: 4em;
+  padding: 2em;
+  margin: 0px;
 
   .logo {
     color: #a0067e;
@@ -42,8 +43,9 @@ header {
     a {
       display: block;
       margin: 6px;
+      text-align: center;
       // padding: 0 0.5em;
-      font-size:smaller;
+      
     }
   }
 }
