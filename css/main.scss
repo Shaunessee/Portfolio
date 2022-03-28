@@ -215,9 +215,12 @@ section {
   html,body{
     overflow-x: hidden;
   }
-  hero {
-    // text-align: left;
+  .hero {
+    margin-left: -8em;
     padding: 8em;
+  }
+  .nav-options {
+    display: none;
   }
 }
 
