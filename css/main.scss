@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700&display=swap");
 
-html,body{
-  overflow-x: hidden;
-}
+
 body {
   background: hsla(0, 0%, 90%, 1);
   height: 100vh;
@@ -61,7 +59,7 @@ header {
   color: #18116a;
   display: grid;
   text-align: center;
-  padding: 4em;
+  padding: 8em;
   // margin-left: 0em;
   // width: 100%;
 }
@@ -210,10 +208,16 @@ section {
   line-height: 1em;
 }
 
+
+
 @media only screen and (max-width: 600px) {
 
-  .meet {
-    text-align: left;
+  html,body{
+    overflow-x: hidden;
+  }
+  hero {
+    // text-align: left;
+    padding: 8em;
   }
 }
 
