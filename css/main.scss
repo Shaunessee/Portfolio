@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700&display=swap");
 
+html,body{
+  overflow-x: hidden;
+}
 body {
   background: hsla(0, 0%, 90%, 1);
-  // height: 100vh;
+  height: 100vh;
   margin: 0;
-  // max-width: 100%;
   font-family: "Battambang", arial;
 }
 ul {
@@ -20,7 +22,7 @@ img {
 }
 .nav-container {
   background-color: rgba(180, 85, 170, 0.58);
-  width: 100%;
+  // width: 100%;
   a {
     color: #18116a;
   }
@@ -29,26 +31,26 @@ header {
   display: flex; //brings them side by side in header
   justify-content: space-between;
   padding: 2em;
-  margin: 0px;
+  // margin: 0px;
 
   .logo {
     color: #a0067e;
     font-weight: bold;
-    font-size: large;
+    // font-size: large;
   }
 
-  // ul {
-  //   display: flex;
+  ul {
+    display: flex;
     
-  //   a {
-  //     display: none;
-  //     // display: block;
-  //     // margin: 6px;
-  //     // text-align: center;
-  //     // padding: 0 0.5em;
+    a {
+     
+      display: block;
+      // margin: 6px;
+      // text-align: center;
+      padding: 0 1em;
       
-  //   }
-  // }
+    }
+  }
 }
 .social-header,
 .hero-design {
@@ -58,16 +60,10 @@ header {
   background-color: rgba(175, 96, 168, 0.58);
   color: #18116a;
   display: grid;
-  // text-align: left;
-  padding: 2em 0em 0em -2em;
+  text-align: center;
+  padding: 4em;
   // margin-left: 0em;
   // width: 100%;
-}
-
-.content {
- text-align: left;
- font-size: 10px;
- margin-left: 2em;
 }
 
 .meet {
@@ -76,18 +72,18 @@ header {
   width: 400px;
   font-weight: bold;
   color: #2a53bc;
-  margin-left: 2em;
+  // margin-left: 2em;
 
-  // span {
-  //   margin-top: 1em;
-  //   margin-right: 0.5em;
-  //   margin-left: 6em;
-  // }
   span {
     margin-top: 1em;
     margin-right: 0.5em;
-    margin-left: -2em;
+    margin-left: 6em;
   }
+  // span {
+  //   margin-top: 1em;
+  //   margin-right: 0.5em;
+  //   margin-left: -2em;
+  // }
 }
 // .scroll {
 //   width: 30px;
@@ -139,6 +135,7 @@ section {
 }
 .skills {
   background-color: rgba(86, 223, 199, 0.4);
+  width: auto;
 }
 .skills-container ul li {
   background: #9db1e6;
@@ -211,6 +208,13 @@ section {
 .email {
   font-size: 1.5em;
   line-height: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .meet {
+    text-align: left;
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -311,6 +315,7 @@ section {
   }
   .meet {
     margin: unset;
+    margin-left: -6em;
   }
 
   .hero-design {
