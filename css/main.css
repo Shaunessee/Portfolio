@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700&display=swap");
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   background: #e6e6e6;
   height: 100vh;
@@ -20,43 +24,81 @@ img {
   width: 100%;
 }
 
-.nav-container {
-  background-color: rgba(180, 85, 170, 0.58);
+nav {
+  background: rgba(230, 230, 230, 0.721);
+  -webkit-box-shadow: v0 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: v0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.nav-container a {
-  color: #18116a;
-}
-
-header {
+.nav-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2em;
+  padding: 1rem;
 }
 
-header .logo {
+.nav-header .logo {
   color: #a0067e;
   font-weight: bold;
+  font-size: large;
 }
 
-header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.nav-toggle {
+  font-size: 1.5rem;
+  color: rgba(175, 96, 168, 0.58);
+  background: transparent;
+  border-color: transparent;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
 }
 
-header ul a {
+.nav-toggle:hover {
+  color: #2a53bc;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.logo {
+  height: 40px;
+}
+
+.links a {
+  color: #324d67;
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
   display: block;
-  padding: 0 1em;
+  padding: 0.5rem 1rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
-.social-header,
-.hero-design {
+.links a:hover {
+  background: #bd7baf;
+  color: black;
+  padding-left: 1.5rem;
+}
+
+.social-icons {
   display: none;
+}
+
+.links {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: vall 0.3s linear;
+  transition: vall 0.3s linear;
+}
+
+.show-links {
+  height: 10rem;
 }
 
 .hero {
@@ -64,8 +106,9 @@ header ul a {
   color: #18116a;
   display: -ms-grid;
   display: grid;
-  text-align: center;
+  text-align: left;
   padding: 8em;
+  margin-left: -6em;
 }
 
 .meet {
@@ -201,10 +244,6 @@ section {
   background: rgba(175, 96, 167, 0.58);
 }
 
-.footer-design {
-  display: none;
-}
-
 .content {
   line-height: 2em;
 }
@@ -230,20 +269,58 @@ section {
   line-height: 1em;
 }
 
-@media only screen and (max-width: 600px) {
-  html, body {
-    overflow-x: hidden;
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1rem;
   }
-  .hero {
-    margin-left: -8em;
-    padding: 8em;
+  .nav-header {
+    padding: 0;
   }
-  .nav-options {
+  .nav-toggle {
     display: none;
   }
-}
-
-@media only screen and (min-width: 800px) {
+  .links {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+  .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .social-icons a {
+    margin: 0 1.5rem;
+    color: #a0067e;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .social-icons a:hover {
+    color: #e261c6c4;
+  }
+  .hero {
+    text-align: center;
+  }
   .about-me,
   .portfolio {
     text-align: left;
@@ -337,6 +414,7 @@ section {
     background: rgba(175, 96, 167, 0.58);
     padding: 6em 8em 6em 4em;
     text-align: left;
+    margin-left: 4em;
   }
   .hero .content h1 {
     font-size: 3em;

@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700&display=swap");
 
-
+html,body{
+  overflow-x: hidden;
+}
 body {
   background: hsla(0, 0%, 90%, 1);
   height: 100vh;
   margin: 0;
   font-family: "Battambang", arial;
+
 }
 ul {
   list-style-type: none; //gets rid of any dots in the list
@@ -16,51 +19,72 @@ a {
   text-decoration: none; //gets rid of the underline
 }
 img {
-  width: 100%,;
+  width: 100%;
 }
-.nav-container {
-  background-color: rgba(180, 85, 170, 0.58);
-  // width: 100%;
-  a {
-    color: #18116a;
-  }
+nav {
+  background: rgba(230, 230, 230, 0.721);
+  box-shadow: v0 5px 15px rgba(0, 0, 0, 0.1);
 }
-header {
-  display: flex; //brings them side by side in header
+.nav-header {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 2em;
-  // margin: 0px;
+  padding: 1rem;
 
   .logo {
     color: #a0067e;
     font-weight: bold;
-    // font-size: large;
+    font-size: large;
   }
+}
+.nav-toggle {
+  font-size: 1.5rem;
+  color: rgba(175, 96, 168, 0.58);
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  color: #2a53bc;
+  transform: rotate(90deg);
+}
+.logo {
+  height: 40px;
+}
+.links a {
+  color: hsl(209, 34%, 30%);
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s linear;
+}
+.links a:hover {
+  background: #bd7baf;
+  color:black;
+  padding-left: 1.5rem;
+}
+.social-icons {
+  display: none;
+}
+.links {
+  height: 0;
+  overflow: hidden;
+  transition: vall 0.3s linear;
+}
+.show-links {
+  height: 10rem;
+}
 
-  ul {
-    display: flex;
-    
-    a {
-     
-      display: block;
-      // margin: 6px;
-      // text-align: center;
-      padding: 0 1em;
-      
-    }
-  }
-}
-.social-header,
-.hero-design {
-  display: none; //hide social header for mobile application
-}
 .hero {
   background-color: rgba(175, 96, 168, 0.58);
   color: #18116a;
   display: grid;
-  text-align: center;
+  text-align: left;
   padding: 8em;
-  // margin-left: 0em;
+  margin-left: -6em;
   // width: 100%;
 }
 
@@ -185,9 +209,7 @@ section {
 .footer {
   background: hsla(306, 33%, 53%, 0.58);
 }
-.footer-design {
-  display: none;
-}
+
 .content {
   line-height: 2em;
 
@@ -208,25 +230,48 @@ section {
   line-height: 1em;
 }
 
-
-
-@media only screen and (max-width: 600px) {
-
-  html,body{
-    overflow-x: hidden;
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
   }
-  .hero {
-    margin-left: -8em;
-    padding: 8em;
+  .nav-header {
+    padding: 0;
   }
-  .nav-options {
+  .nav-toggle {
     display: none;
   }
-  
-}
+  .links {
+    height: auto;
+    display: flex;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+  .social-icons {
+    display: flex;
+  }
+  .social-icons a {
+    margin: 0 1.5rem;
+    color: #a0067e;
+    transition: all 0.3s linear;
+  }
+  .social-icons a:hover {
+    color: #e261c6c4;
+  }
 
-@media only screen and (min-width: 800px) {
-  
+.hero {
+  text-align: center;
+}
   .about-me,
   .portfolio {
     text-align: left;
@@ -314,6 +359,7 @@ section {
       background: hsla(306, 33%, 53%, 0.58);
       padding: 6em 8em 6em 4em;
       text-align: left;
+      margin-left: 4em;
 
       h1 {
         font-size: 3em;
@@ -344,5 +390,3 @@ section {
   //   float: right;
   // }
 }
-
-
