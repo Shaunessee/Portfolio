@@ -160,12 +160,10 @@
 
     </div>
     <script>
-        const navToggle = document.getElementById("toggle");
-        const links = document.getElementById("links");
 
-        navToggle.addEventListener("click", function () {
+        document.getElementById("toggle").addEventListener("click", function () {
 
-            links.classList.toggle("show-links");
+            document.getElementById("links").classList.toggle("show-links");
         });
     </script>
 </body>
