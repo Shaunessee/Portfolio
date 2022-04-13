@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,700;1,300;1,400;1,600&display=swap');
+
 body {
-    background: hsla(248, 84%, 35%, 1);
-    text-align: center;
-    font-family: "Red Hat Mono", arial;
-    color:white;
+   background: hsla(248, 84%, 35%, 1);
+   text-align: center;
+   font-family: "Red Hat Mono", arial;
+   color: white;
 }
 
 h1 {
@@ -16,9 +17,7 @@ h3 {
    font-style: italic;
 }
 
-
-
-main { 
+main {
    display: flex;
    justify-content: space-evenly;
    align-items: center;
@@ -30,8 +29,8 @@ article {
    margin: 20px 10px 0;
    border: 1px solid #000;
    border-radius: 15px;
-   box-shadow: 5px 5px 10px #333; 
-   position: relative; 
+   box-shadow: 5px 5px 10px #333;
+   position: relative;
    background-color: white;
    color: #000;
 
@@ -50,9 +49,9 @@ img {
 .like {
    width: 90px;
    height: 100px;
-   position: absolute; 
-   top: 2%; 
-   right: 2%; 
+   position: absolute;
+   top: 2%;
+   right: 2%;
 }
 
 .like-no {
