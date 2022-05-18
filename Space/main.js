@@ -68,20 +68,8 @@ const likes = () => {
         like.addEventListener("click", (event) => {
             event.target.classList.toggle("like-no");
             event.target.classList.toggle("like-yes");
-            if (event.target.classList.contains("like-yes")) {
-                getFaveData(event.target);
-            } else {
-                getFaveData(event.target);
-            }
+
         })
     })
 }
-const getFaveData = (elem) => {
-    const parent = elem.parentElement;
-    const img = parent.querySelector("img").src;
-    const title = parent.querySelector("h2").textContent;
-    const date = parent.querySelector("p").textContent
-    const imgObj = { img, title, date };
-}
-
 
